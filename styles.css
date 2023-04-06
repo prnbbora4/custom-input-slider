@@ -1,0 +1,74 @@
+:root{
+--bgColor: #FFFFFF;
+--color: #00BD56;
+}
+
+body{
+background-color: #000000;
+}
+/********** Range Input Styles **********/
+/*Range Reset*/
+.volSlider {
+   -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+    cursor: pointer;
+    width: 15rem;
+}
+
+/* Removes default focus */
+.volSlider:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.volSlider::-webkit-slider-runnable-track {
+   background-color: var(--bgColor);
+   border-radius: 0.5rem;
+   height: 0.5rem;  
+}
+
+/* slider thumb */
+.volSlider::-webkit-slider-thumb {
+  -webkit-appearance: none; /* Override default look */
+   appearance: none;
+   margin-top: -4px; /* Centers thumb on the track */
+   /*custom styles*/
+   background-color: var(--color);
+   height: 1rem;
+   width: 1rem;
+   border-radius: 50%;
+}
+
+/* .volSlider:focus::-webkit-slider-thumb {    */
+/*   border: 1px solid #053a5f; */
+/*   outline: 3px solid #053a5f; */
+/*   outline-offset: 0.125rem;  */
+/* } */
+
+/******** Firefox styles ********/
+/* slider track */
+.volSlider::-moz-range-track {
+   background-color: var(--bgColor);
+   border-radius: 0.5rem;
+   height: 0.5rem;
+}
+
+/* slider thumb */
+.volSlider::-moz-range-thumb {
+   border: none; /*Removes extra border that FF applies*/
+   border-radius: 50%; /*Removes default border-radius that FF applies*/
+
+   /*custom styles*/
+   background-color: var(--color);
+   height: 1rem;
+   width: 1rem;
+}
+
+/* .volSlider:focus::-moz-range-thumb { */
+/*   border: 1px solid #053a5f; */
+/*   outline: 3px solid #053a5f; */
+/*   outline-offset: 0.125rem;  */
+/* } */
+
